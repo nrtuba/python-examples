@@ -1,0 +1,21 @@
+print("=======================sayiyi tahmin etme oyunu===================")
+print("=======================5 deneme hakkiniz var===============")
+tahmini_sayi = "9"#tahmin edilmesi gereken sayi
+oyuncu=input("adinizi girin lutfen")#kullanicidan adini isteyelim
+
+if input("1)lutfen 1den 10a kadar tahmini bir sayi girin.....") == tahmini_sayi:
+    print("tebrikler",oyuncu," ilk denemede buldun (***)kazandin")
+
+elif input("2) maalesef lutfen tekrar deneyin") == tahmini_sayi:
+    print("tebrikler",oyuncu, "2.denemede buldun ")
+
+elif input("3) maalesef lutfen tekrar deneyin") == tahmini_sayi:
+    print("tebrikler",oyuncu, "3.denemede buldun(**)kazandin")
+
+elif input("4) maalesef lutfen tekrar deneyin") == tahmini_sayi:
+    print("tebrikler",oyuncu,"4.denemede buldun")
+
+elif input("5) maalesef lutfen tekrar deneyin") == tahmini_sayi:
+    print("tebrikler",oyuncu, "5.denemede buldun (*)kazandin ")
+else:
+     print("maalesef" ,oyuncu,"5 tahmin hakkinda bitti,tahmini sayim: {}idi".format(tahmini_sayi) )#kullanici 5denemede bilmezse tahmini sayimizi format yontemiyle printleyelim

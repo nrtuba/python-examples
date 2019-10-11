@@ -1,0 +1,26 @@
+#ogrenci not ortalamasi
+#vize1 => %30, vize2 => %30, final => %40 etkiliyor.
+#kullanicidan notlari girmesini isteyelim.
+vize1=int(input("lutfen 1. vize notunuzu giriniz: "))
+vize2=int(input("lutfen 2.vize notunuzu giriniz:"))
+final=int(input("lutfen final notunuzu giriniz:"))
+
+derece=vize1*3/10+vize2*3/10+final*4/10 # alinan vize ve final notlarini  formul ile toplayip yuzdeleriyle carpalim.
+if derece>=90:
+    print("ders notunuz: AA,\ntebrikler gectiniz!")
+elif derece>=85:
+    print("ders notunuz: BA\ntebrikler gectiniz")
+elif derece>=80:
+    print("ders notunuz: BB\ntebrikler gectiniz")
+elif derece>=75:
+    print("ders notunuz: CB\ntebrikler gectiniz")
+elif derece >= 70:
+    print("ders notunuz: CC\ntebrikler gectiniz")
+elif derece >= 65:
+    print("ders notunuz: DC\ntebrikler gectiniz")
+elif derece>=60:
+    print("ders notunuz: DD\ntebrikler gectiniz")
+elif derece >= 55:
+    print("ders notunuz: FD\ntebrikler gectiniz")
+elif derece < 55:
+    print("ders notunuz: FF,\n uzgunum maalesef dersten kaldiniz.")

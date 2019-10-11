@@ -1,0 +1,34 @@
+
+print("""===========================
+==========ATMBANK==========
+===========================""")
+
+print(""" atmbank'a hosgeldiniz!
+lutfen kartinizi  takin""")
+
+print("\n1- bakiye kontrol\n2-para cekimi\n3-para yatirma \n4-cikis ")#yapilacak islemin secilmesi icin numaralandiralim
+bakiye=1000 #toplam bakiye miktarini belirtelim
+while True:   #secilen islem dogru oldugu surece islem devam etsin
+    islem = input("istediginiz islem numarasini secin")
+    if islem=="4":
+        print("cikis yapiliyor...")
+        break
+    elif islem=="1":
+        print("bakiye kontrolunuz gerceklesiyor\ntoplam bakiyeniz {}TLdir".format(bakiye))
+
+
+    elif islem=="2":
+          cekilecek_miktar = int(input("ne kadar cekmek istersiniz?")) #cekilecek miktari int() olarak belirtelim
+          if  int(bakiye) >= cekilecek_miktar:  #cekilecek miktarin bakiyeden buyuk olmamasini denetleyelim
+              print("hesabinizdan {} Tl cekilmistir".format(cekilecek_miktar))
+              print("bakiyeniz {}".format(bakiye-cekilecek_miktar)) #bakiyeyi cekilen miktardan cikarip toplam kalani yazalim
+          else:
+              print("bakiyeniz yetersiz")
+    elif islem=="3":
+        yatirilacak_miktar= int(input("ne kadar yatirmak istersiniz?")) #yatirlacak miktari int() olarak belitelim
+        print("hesabiniza {}Tl e yatirilmistir".format(yatirilacak_miktar))
+        print("toplam bakiyeniz {}Tldir".format(bakiye+yatirilacak_miktar)) #bakiyeyi ve yatirilan miktari toplayip miktari yazalim
+
+    else:
+        print("gecersiz islem")
+

@@ -1,0 +1,21 @@
+#kullanicidan ad ve soyadini isteyelim.
+ad=input("adinizi girin:")
+soyad=input("soyadinizi girin:")
+
+#vize notunun( 30%)
+# Final Notunun (50%
+# Ders takibinin (20%) almaliyiz.
+
+v = int(input("vize:"))
+f = int(input("final:"))
+g_t_d =int(input("girilen ders sayisi:"))
+
+#ortalama formulunu yazalim.
+ortalama = v*0.30 + f*0.50 + 0.20*(g_t_d*5)
+print("ortalama=", ortalama)
+
+if ortalama>=50:
+    print("gecti")
+else:
+    print("kaldi")
+

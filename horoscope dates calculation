@@ -1,0 +1,47 @@
+# burc hesaplama
+#kullanicidan dogum tarihini aygun olarak bitisik isteyelim
+#dot=dogum tarihi
+#aygun olarak input alinan tarihi   or baglacini kullanarak printleyebiliriz.
+
+dot=int(input("lutfen dogum tarihinizi aygun olarak bitisik giriniz:"))
+
+
+if  dot <= 321 or dot  <= 420:
+   print("burcunuz : koc")
+
+elif dot <= 421  or dot <= 520:
+    print("burcunuz: boga")
+
+elif dot <= 521  or dot <= 621:
+   print("burcunuz: ikizler")
+
+elif dot <= 622  or dot <= 722:
+    print("burcunuz: yengec")
+
+elif dot <= 723  or dot <= 822:
+    print("burcunuz: aslan")
+
+elif dot <= 823  or dot <= 922:
+    print("burcunuz: basak")
+
+elif dot <= 923  or dot <= 1023:
+    print("burcunuz: terazi")
+
+elif dot <= 1024  or dot <= 1122:
+    print("burcunuz: akrep")
+
+elif dot <= 1123  or dot <= 1221:
+    print("burcunuz: yay")
+
+elif dot <= 1222  or dot <= 120:
+    print("burcunuz: oglak")
+
+elif dot <= 121  or dot <= 218:
+    print("burcunuz: kova")
+
+elif dot <= 219  or dot <= 320:
+    print("burcunuz: balik")
+
+
+else:
+    print("tarihini  kontrol etmelisin")

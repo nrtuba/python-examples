@@ -1,0 +1,15 @@
+#python hakkinda 1.ornek
+python_hakkinda = """Python'un kurucusu Guido Van Rossum,Hollanda'nin Amsterdam'daki
+"Universiteit Van Amsterdam" okulundan 1982'de mezun olmustur"""
+print(python_hakkinda,end=".\n")
+print("-"*len(python_hakkinda))
+
+#python hakkinda 2.ornek
+python_hakkinda = """Python'un kurucusu Guido Van Rossum,Hollanda'nin Amsterdam'daki
+"Universiteit Van Amsterdam" okulundan 1982'de mezun olmustur"""
+print(python_hakkinda,"\n","-"*len(python_hakkinda),sep="",end=".\n")
+
+#python hakkinda 3.ornek
+python_hakkinda = """\t Python'un kurucusu Guido Van Rossum, \n Hollanda 'nin Amsterdam'daki
+\t "Universiteit Van Amsterdam" \n okulundan 1982'de mezun olmustur."""
+print(python_hakkinda)

@@ -1,0 +1,22 @@
+# kullanıcıdan hesaplamak istedigi donusumu seçmesini istedik
+istenilen_islem = """
+(1)km=>mil donusturme
+(2)mil=>km donusturme"""
+print(istenilen_islem)
+while True:
+    soru = input("yapmak istediginiz islemin numarasini giriniz (1),(2):")
+    if soru == "1":
+        km = float(input("Kilometre degerini girin:"))
+        # 1 km=0.62137 mil
+        oran = 0.621371 
+        # Km'yi mil donusturme formulu
+        mil = km * oran
+        print("km cinsinden girilen deger: {} mil'dir".format(mil))
+        break
+    elif soru == "2":
+        mil = float(input("mil degerini girin:"))
+        # mil'i km'ye donusturme formulunu ve 1km'nin kac mil oldugunu yazdik.
+        oran = 0.621371
+        km = mil / oran
+        print("mil cinsinden girilen deger:{} km'dir".format(km))
+        break

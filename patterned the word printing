@@ -1,0 +1,14 @@
+#kullanicidan alinan kelimeyi desenli alt-ustu cizili yazdirma
+
+yazi=input("birseyler yazin")
+print("                   "+"^"*len(yazi)+"  ","\n",
+      "            ^^^^    "+" "*len(yazi)+"  ^^^^","\n",
+      "     ^^^^           "+" "*len(yazi)+"         ^^^^","\n",
+      " ^^^^               "+" "*len(yazi)+"             ^^^^","\n",
+      "                    "+"-"*len(yazi)+"                     ","\n"
+      "                    "+yazi+ "                       ","\n",
+      "                    "+"-"*len(yazi)+"             ""\n",
+      " ^^^^               "+" "*len(yazi)+"             ^^^^","\n",
+      "     ^^^^           "+" "*len(yazi)+"          ^^^^     ","\n",
+      "            ^^^^    "+" "*len(yazi)+"   ^^^^           ","\n",
+      "                   "+"^"*len(yazi)+"                    " )

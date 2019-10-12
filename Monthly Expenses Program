@@ -1,0 +1,13 @@
+#Aylik masraf programi
+
+gelir = int(input("aylik toplam geliriniz:"))
+mutfak = int(input("mutfak masrafi:"))
+egitim = int(input("egitim masrafi:"))
+giyim = int(input("giyim  masrafi:"))
+ulasim = int(input("ulasim masrafi:"))
+
+aylik_toplam_masraf = gelir - (mutfak + egitim  + giyim + ulasim) #toplam gelirden masraflari cikarma islemi
+print("aylik toplam masrafiniz:",aylik_toplam_masraf)
+
+masrafin_gelire_orani = 100*(aylik_toplam_masraf/gelir) #toplam masrafin gelire gore yuzdelik formulu.
+print("toplam masrafin gelirinize gore orani:","%",masrafin_gelire_orani) 

@@ -1,0 +1,10 @@
+#Faiz hesaplama programi
+#Kullanicidan gerekli bilgileri alip faiz tutarini hesaplayalim.
+a_para = int(input("anaparayi girniz:"))
+f_orani = float(input("oran giriniz:"))
+f_suresi = int(input("ay girniz:"))
+
+#Faiz hesaplama formulu:
+faiz= (a_para *f_suresi*f_orani) / 100
+
+print("{} ay sonraki toplam para miktari: {}₺".format(f_suresi,a_para+faiz))

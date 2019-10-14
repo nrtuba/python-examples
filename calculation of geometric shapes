@@ -1,0 +1,34 @@
+#kullanicidan istedigi sekilin kenar sayisini girmesini istiyoruz.
+sekil= int(input("ogrenmek istediginiz seklin kenar sayisini giriniz\nucgen:3\ndortgen:4"))
+if sekil==3:
+    #kenar uzunluklarini a,b,c olarak belirtelim
+            a = int(input("kenar1 uzunlugunu giriniz"))
+            b = int(input("kenar2 uzunlugunu giriniz"))
+            c = int(input("kenar3 uzunlugunu giriniz"))
+
+            if not(a+b)>c or not (a+c)>b or not (b+c)>a:
+                    print("sekil ucgen degil")
+
+
+            elif a==b==c:
+                    print("bu bir Eskenar ucgen")
+            elif a==b or a==c or b==c:
+                    print("bu bir ikizkenar ucgen")
+            else:
+                    print("bu  bir cesitkenar ucgendir")
+
+
+elif sekil==4:
+            a = int(input("kenar1 uzunlugunu giriniz"))
+            b = int(input("kenar2 uzunlugunu giriniz"))
+            c = int(input("kenar3 uzunlugunu giriniz"))
+            d = int(input("kenar4 uzunlugunu giriniz:"))
+            if a==b==c==d:
+             print("bu  sekil eskenar dortgen veya karedir. ")
+            elif (a==c and b==d) or (a==d and b==c) or (a==b)and (d==c):
+             print("bu sekil bir dikdortgen veya paralel kenar dortgendir.")
+
+            else:
+              print("bu bir cesitkenar cokgendir")
+else:
+    print("lutfen istediginiz sekilin kenar sayisini  girip tekrar deneyin")

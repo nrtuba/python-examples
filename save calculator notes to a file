@@ -1,4 +1,5 @@
-#kullanicidan ad ve soyadini isteyelim.
+dosya=open("notes.txt","w")
+dosya.write("""
 ad=input("adinizi girin:")
 soyad=input("soyadinizi girin:")
 
@@ -17,5 +18,5 @@ print("ortalama=", ortalama)
 if ortalama>=50:
     print("gecti")
 else:
-    print("kaldi")
-
+    print("kaldi)""")
+dosya.close()

@@ -1,47 +1,77 @@
 # burc hesaplama
-#kullanicidan dogum tarihini aygun olarak bitisik isteyelim
-#dot=dogum tarihi
-#aygun olarak input alinan tarihi   or baglacini kullanarak printleyebiliriz.
+#kullanicidan dogum tarihini ay ve gun  olarak bitisik isteyelim
 
-dot=int(input("lutfen dogum tarihinizi aygun olarak bitisik giriniz:"))
+#ay ve gun olarak input alinan tarihi  if ve elif  baglacini kullanarak printleyebiliriz.
+
+dogum_ayi=int(input("lutfen dogum tarihinizi ay olarak giriniz:"))
+dogum_gunu=int(input("lutfen dogum gunuzu giriniz"))
+
+if  dogum_ayi==3:
+    if dogum_gunu<=20:
+        print("burcunuz : balik")
+    elif dogum_gunu>20:
+        print("burcunuz koc")
+
+elif dogum_ayi == 4:
+    if dogum_gunu <= 20:
+        print("burcunuz : koc")
+    elif dogum_gunu>20:
+        print("burcunuz boga")
+
+elif dogum_ayi == 5:
+    if dogum_gunu <= 20:
+        print("burcunuz : koc")
+    elif dogum_gunu>20:
+        print("burcunuz ikizler")
+
+elif dogum_ayi== 6:
+    if dogum_gunu <= 20:
+        print("burcunuz : ikizler")
+    elif dogum_gunu > 20:
+        print("burcunuz yengec")
+elif dogum_ayi == 7:
+    if dogum_gunu <= 22:
+        print("burcunuz : yengec")
+    elif dogum_gunu>22:
+        print("burcunuz aslan")
+elif dogum_ayi == 8:
+    if dogum_gunu <= 23:
+        print("burcunuz : aslan")
+    elif dogum_gunu>23:
+        print("burcunuz basak")
+elif dogum_ayi == 9:
+    if dogum_gunu <= 23:
+        print("burcunuz : basak")
+    elif dogum_gunu > 23:
+        print("burcunuz terazi")
+elif dogum_ayi == 10:
+    if dogum_gunu <= 23:
+        print("burcunuz : terazi")
+    elif dogum_gunu>23:
+        print("burcunuz akrep")
+elif dogum_ayi == 11:
+    if dogum_gunu <= 22:
+        print("burcunuz : akrep")
+    elif dogum_gunu>22:
+        print("burcunuz yay")
+elif dogum_ayi == 12:
+    if dogum_gunu <= 21:
+        print("burcunuz : yay")
+    elif dogum_gunu>21:
+        print("burcunuz oglak")
+elif dogum_ayi == 1:
+    if dogum_gunu <= 20:
+        print("burcunuz : oglak")
+    elif dogum_gunu>20:
+        print("burcunuz : kova")
+elif dogum_ayi == 2:
+    if dogum_gunu <= 18:
+        print("burcunuz : kova")
+    elif dogum_gunu>18:
+        print("burcunuz balik")
 
 
-if  dot <= 321 or dot  <= 420:
-   print("burcunuz : koc")
-
-elif dot <= 421  or dot <= 520:
-    print("burcunuz: boga")
-
-elif dot <= 521  or dot <= 621:
-   print("burcunuz: ikizler")
-
-elif dot <= 622  or dot <= 722:
-    print("burcunuz: yengec")
-
-elif dot <= 723  or dot <= 822:
-    print("burcunuz: aslan")
-
-elif dot <= 823  or dot <= 922:
-    print("burcunuz: basak")
-
-elif dot <= 923  or dot <= 1023:
-    print("burcunuz: terazi")
-
-elif dot <= 1024  or dot <= 1122:
-    print("burcunuz: akrep")
-
-elif dot <= 1123  or dot <= 1221:
-    print("burcunuz: yay")
-
-elif dot <= 1222  or dot <= 120:
-    print("burcunuz: oglak")
-
-elif dot <= 121  or dot <= 218:
-    print("burcunuz: kova")
-
-elif dot <= 219  or dot <= 320:
-    print("burcunuz: balik")
 
 
-else:
-    print("tarihini  kontrol etmelisin")
+
+
